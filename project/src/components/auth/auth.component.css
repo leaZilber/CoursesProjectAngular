@@ -1,0 +1,49 @@
+/* עיצוב כללי של ה-container */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0f7fa; /* רקע טורקיז בהיר */
+  }
+  
+  /* עיצוב ה-mat-card */
+  mat-card {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff; /* רקע לבן לפנל */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  /* עיצוב כותרת ה-mat-card */
+  mat-card-title {
+    color: #00796b; /* צבע טורקיז כהה */
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* עיצוב תוכן ה-mat-card */
+  mat-card-content p {
+    font-size: 16px;
+    color: #004d40; /* צבע טורקיז כהה יותר */
+    margin: 10px 0;
+  }
+  
+  /* עיצוב כפתורים ב-mat-card */
+  mat-card-actions button {
+    background-color: #00796b; /* צבע טורקיז כהה לכפתורים */
+    color: white;
+    margin: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* שינוי צבע בעת ריחוף מעל הכפתור */
+  mat-card-actions button:hover {
+    background-color: #004d40; /* צבע טורקיז כהה יותר בעת ריחוף */
+  }
+  

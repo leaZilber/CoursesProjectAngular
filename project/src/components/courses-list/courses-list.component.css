@@ -1,0 +1,83 @@
+/* עיצוב הכללי של הדף */
+body {
+  background-color: #e0f7fa; /* רקע טורקיז בהיר */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* עיצוב כרטיס ה-mat-card */
+mat-card {
+  background-color: #ffffff; /* רקע לבן */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* כותרת הקורסים */
+h2 {
+  color: #00796b; /* צבע טורקיז כהה */
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* עיצוב של כל פנל בתוך ה-mat-accordion */
+mat-expansion-panel {
+  margin-bottom: 15px;
+}
+
+/* כותרת ה-expansion panel */
+mat-expansion-panel-header {
+  background-color: #00796b; /* צבע טורקיז כהה לכותרת */
+  color: #ffffff; /* צבע טקסט לבן */
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* כותרת הקורסים */
+mat-panel-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* כפתורים בגווני טורקיז */
+button {
+  background-color: #004d40; /* טורקיז כהה יותר */
+  color: white;
+  margin-right: 10px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #00796b; /* צבע יותר בהיר בעת ריחוף */
+}
+
+/* תיאור הקורס */
+h4 {
+  color: #00796b; /* צבע טורקיז כהה */
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* פסקה עם תיאור הקורס */
+p {
+  font-size: 16px;
+  color: #004d40; /* טורקיז כהה יותר */
+  line-height: 1.6;
+}
+
+/* עיצוב כרטיסים קטנים בתוך ה-accordion */
+mat-expansion-panel-content {
+  background-color: #e0f7fa; /* רקע טורקיז בהיר */
+  padding: 15px;
+  border-radius: 8px;
+}

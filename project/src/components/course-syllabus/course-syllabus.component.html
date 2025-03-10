@@ -1,0 +1,23 @@
+<mat-accordion>
+  @for (course of list; track course.id) {
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{ course.title }}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>Course description: {{ course.description }}</p>
+    <h4>lesson list: </h4>
+    <mat-list>
+      @for (lesson of course.lessons; track lesson.title) {
+      <mat-list-item>
+        <div>
+          <h3>{{ lesson.title }}</h3>
+          <div>{{ lesson.content }}</div>
+        </div>
+      </mat-list-item>
+      }
+    </mat-list>
+  </mat-expansion-panel>
+  }
+</mat-accordion>

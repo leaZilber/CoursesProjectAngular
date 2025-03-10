@@ -1,0 +1,53 @@
+<div>
+  <mat-card>
+    <h2>Register</h2>
+    <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+      <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name" required>
+        @if(signUpForm.get('name')?.invalid && signUpForm.get('name')?.touched){
+        <mat-error>
+          Error: name is required
+        </mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="email" required>
+
+        @if(signUpForm.get('email')?.invalid && signUpForm.get('email')?.touched){
+
+        <mat-error>
+          Error: Email is not valid
+        </mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" formControlName="password" required>
+        @if(signUpForm.get('password')?.hasError('required') && signUpForm.get('password')?.touched){
+        <mat-error>
+          Error: required filed
+        </mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Role</mat-label>
+        <mat-select formControlName="role">
+          <mat-option value="teacher">Teacher</mat-option>
+          <mat-option value="student">Student</mat-option>
+          <mat-option value="admin">Admin</mat-option>
+        </mat-select>
+        @if(signUpForm.get('role')?.invalid && signUpForm.get('role')?.touched){
+        <mat-error>
+          Error: required filed
+        </mat-error>
+        }
+      </mat-form-field>
+      <button mat-raised-button type="submit">Send</button>
+    </form>
+  </mat-card>
+</div>

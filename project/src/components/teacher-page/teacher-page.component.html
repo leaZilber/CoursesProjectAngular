@@ -1,0 +1,148 @@
+@if (showFormAdd) {
+<form [formGroup]="courseForm" (ngSubmit)="addCourse()">
+  <mat-form-field appearance="outline">
+    <mat-label>title </mat-label>
+    <input matInput placeholder="title " formControlName="title">
+    @if(courseForm.get('title')?.invalid && courseForm.get('title')?.touched){
+
+    <mat-error>
+      Error: required filed
+    </mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>description</mat-label>
+    <textarea matInput placeholder="description" formControlName="description"></textarea>
+    @if(courseForm.get('description')?.invalid && courseForm.get('description')?.touched){
+
+    <mat-error>
+      Error: required filed
+    </mat-error>
+    }
+  </mat-form-field>
+
+  <button mat-raised-button type="submit">Send</button>
+</form>
+}
+
+
+@if (showFormUpdate) {
+<form [formGroup]="courseForm" (ngSubmit)="updateCourse()">
+  <mat-form-field appearance="outline">
+    <mat-label>title </mat-label>
+    <input matInput placeholder="title " formControlName="title">
+    @if(courseForm.get('title')?.invalid && courseForm.get('title')?.touched){
+
+    <mat-error>
+      Error: required filed
+    </mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>description</mat-label>
+    <textarea matInput placeholder="description" formControlName="description"></textarea>
+    @if(courseForm.get('description')?.invalid && courseForm.get('description')?.touched){
+
+    <mat-error>
+      Error: required filed
+    </mat-error>
+    }
+  </mat-form-field>
+
+  <button mat-raised-button type="submit">Send</button>
+</form>
+}
+
+@if (ShowAddLesson) {
+<form [formGroup]="courseForm" (ngSubmit)="AddlessonForm()">
+  <mat-form-field appearance="outline">
+    <mat-label>title </mat-label>
+    <input matInput placeholder="title " formControlName="title">
+    @if(courseForm.get('title')?.invalid && courseForm.get('title')?.touched){
+
+    <mat-error>
+      Error: required filed
+    </mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>content</mat-label>
+    <textarea matInput placeholder="content" formControlName="description"></textarea>
+    @if(courseForm.get('description')?.invalid && courseForm.get('description')?.touched){
+
+    <mat-error>
+      Error: required filed
+    </mat-error>
+    }
+  </mat-form-field>
+
+  <button mat-raised-button type="submit">Send</button>
+</form>
+}
+
+@if (ShowUpdateLesson) {
+<form [formGroup]="courseForm" (ngSubmit)="updatelesson()">
+  <mat-form-field appearance="outline">
+    <mat-label>title </mat-label>
+    <input matInput placeholder="title " formControlName="title">
+    @if(courseForm.get('title')?.invalid && courseForm.get('title')?.touched){
+
+    <mat-error>
+      Error: required filed
+    </mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>content</mat-label>
+    <textarea matInput placeholder="content" formControlName="description"></textarea>
+    @if(courseForm.get('description')?.invalid && courseForm.get('description')?.touched){
+
+    <mat-error>
+      Error: required filed
+    </mat-error>
+    }
+  </mat-form-field>
+  <button mat-raised-button type="submit">Send</button>
+</form>
+}
+
+<div>
+  <div>
+    <mat-accordion>
+      @for (course of list; track course.id) {
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{ course.title }}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>Course description: {{ course.description }}</p>
+
+
+        <h4>lesson list: </h4>
+        <mat-list>
+
+          @for (lesson of course.lessons; track lesson.title) {
+          <mat-list-item> * {{ lesson.title }}---- {{ lesson.content }}</mat-list-item>
+          <button mat-raised-button (click)="UpdateFormlesson(course.id,lesson.id)">Update
+            lesson</button>
+          <button mat-raised-button  (click)="deletelesson(course.id,lesson.id)">Delete
+            lesson</button>
+
+          }
+        </mat-list>
+        <button mat-raised-button  (click)="ShowAddlessonForm(course.id)">Add
+          lesson</button>
+      </mat-expansion-panel>
+      <button mat-raised-button  (click)="UpdateForm(course.id)">Update </button>
+      <button mat-raised-button  (click)="deleteCourse(course.id)">Delete </button>
+
+      }
+    </mat-accordion>
+  </div>
+</div>
+<button mat-raised-button (click)="showFormAdd = true">Add Course</button>

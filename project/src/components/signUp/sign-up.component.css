@@ -1,0 +1,54 @@
+/* מעיצוב גוף הדף */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f8ff; /* רקע בהיר, גוון טורקיז */
+}
+
+/* עיצוב כרטיס ה-Material */
+mat-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #e0f7fa; /* גוון טורקיז בהיר לכרטיס */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* כותרת הכרטיס */
+h2 {
+  text-align: center;
+  color: #00796b; /* גוון טורקיז כהה */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* עיצוב שדות הטופס */
+mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* עיצוב של שדה שגיאה */
+mat-error {
+  color: #d32f2f; /* צבע אדום לשגיאות */
+}
+
+/* עיצוב כפתור שליחה */
+button {
+  width: 100%;
+  background-color: #00796b; /* גוון טורקיז כהה לכפתור */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #004d40; /* גוון טורקיז כהה יותר על hover */
+  cursor: pointer;
+}

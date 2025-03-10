@@ -1,0 +1,67 @@
+/* עיצוב של גוף הדף */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #e0f7fa; /* רקע טורקיז בהיר */
+}
+
+/* עיצוב כרטיס ה-Material */
+mat-card-content {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #ffffff; /* רקע לבן לכרטיס */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* עיצוב של הטקסט */
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #00796b; /* צבע טורקיז כהה */
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* אייקונים צבעוניים */
+p i {
+  color: #00796b; /* גוון טורקיז כהה לאייקונים */
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+/* הדגשת טקסט */
+strong {
+  color: #004d40; /* טורקיז כהה יותר להדגשה */
+  font-weight: bold;
+}
+
+/* סגנון לחצים וקריאות לפעולה */
+p a {
+  color: #00796b; /* טורקיז כהה */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover {
+  color: #004d40; /* גוון טורקיז כהה יותר בה hover */
+}
+
+/* צבעים נוספים לאייקונים */
+p .emoji {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+/* טקסט בולטים */
+h2 {
+  color: #004d40; /* גוון טורקיז כהה בכותרות */
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}

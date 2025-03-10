@@ -1,0 +1,72 @@
+/* עיצוב הכללי של ה-Accordion */
+mat-accordion {
+  margin: 20px auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+/* עיצוב ה-expansion panel */
+mat-expansion-panel {
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: #ffffff; /* רקע לבן לפנלים */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* עיצוב ה-header של כל פנל */
+mat-expansion-panel-header {
+  background-color: #00796b; /* צבע טורקיז כהה לכותרת */
+  color: white; /* צבע לבן לטקסט */
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* כותרת ה-panel */
+mat-panel-title {
+  font-size: 22px;
+}
+
+/* עיצוב התיאור של הקורס */
+p {
+  font-size: 16px;
+  color: #004d40; /* צבע טורקיז כהה יותר */
+  margin: 10px 0;
+}
+
+/* עיצוב כותרת רשימת השיעורים */
+h4 {
+  color: #00796b; /* צבע טורקיז כהה */
+  font-size: 20px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* עיצוב רשימת השיעורים */
+mat-list {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+/* עיצוב פריט ברשימה */
+mat-list-item {
+  background-color: #e0f7fa; /* צבע רקע טורקיז בהיר */
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* עיצוב הכותרת של כל שיעור */
+mat-list-item h3 {
+  color: #00796b; /* צבע טורקיז כהה */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* עיצוב התוכן של כל שיעור */
+mat-list-item div {
+  color: #004d40; /* טורקיז כהה יותר */
+  font-size: 14px;
+  margin-top: 5px;
+}

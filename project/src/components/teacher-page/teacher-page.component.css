@@ -1,0 +1,119 @@
+/* מעיצוב גוף הדף */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #e0f7fa; /* רקע טורקיז בהיר */
+}
+
+/* עיצוב כרטיס ה-Material */
+mat-card {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #ffffff; /* רקע לבן לכרטיס */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* כותרת כל טופס */
+h2 {
+  text-align: center;
+  color: #00796b; /* גוון טורקיז כהה לכותרת */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* עיצוב של שדות הטופס */
+mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* עיצוב של שדה שגיאה */
+mat-error {
+  color: #d32f2f; /* צבע אדום לשגיאות */
+}
+
+/* עיצוב כפתור שליחה */
+button {
+  width: 100%;
+  background-color: #00796b; /* גוון טורקיז כהה לכפתור */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #004d40; /* גוון טורקיז כהה יותר על hover */
+  cursor: pointer;
+}
+
+/* עיצוב של הכפתור להוספת קורס */
+button.mat-raised-button {
+  background-color: #009688;
+  color: white;
+  font-size: 16px;
+  margin: 10px 0;
+  width: auto;
+}
+
+button.mat-raised-button:hover {
+  background-color: #00796b;
+}
+
+/* עיצוב של ה-accordion */
+mat-accordion {
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* עיצוב של כותרת פנל */
+mat-expansion-panel-header {
+  background-color: #00796b;
+  color: white;
+}
+
+mat-panel-title {
+  font-size: 18px;
+}
+
+/* עיצוב של כפתורים בתוך פנל */
+mat-expansion-panel button {
+  background-color: #4caf50;
+  color: white;
+  margin-top: 10px;
+  width: auto;
+}
+
+mat-expansion-panel button:hover {
+  background-color: #388e3c;
+}
+
+/* עיצוב של הרשימה בתוך הקורס */
+mat-list {
+  margin-top: 10px;
+}
+
+mat-list-item {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* עיצוב כללי של כפתור ה-Update */
+button.mat-raised-button {
+  background-color: #0288d1;
+  color: white;
+  font-size: 16px;
+  width: auto;
+}
+
+button.mat-raised-button:hover {
+  background-color: #01579b;
+}
