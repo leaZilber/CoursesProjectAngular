@@ -23,8 +23,6 @@ export class CoursesApiService {
     return this.http.get<Course[]>(`http://localhost:3000/api/courses/student/${localStorage.getItem('userId')}`);
   
   }
-  
-  
 
   getlessons(courseId:number|undefined){
     return this.http.get<Lesson[]>(`http://localhost:3000/api/courses/${courseId}/lessons`)

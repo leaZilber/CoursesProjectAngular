@@ -124,9 +124,7 @@ export class TeacherPageComponent implements OnInit {
   }
 
   AddlessonForm() {
-
     if (this.courseForm.valid) {
-
       const updateData = {
         title: this.courseForm.value.title,
         content: this.courseForm.value.description
@@ -171,7 +169,6 @@ export class TeacherPageComponent implements OnInit {
       this.selctedCours = null;
       this.selectedlesson = null;
     }
-
   }
 
   deletelesson(Cid: number | undefined,Lid: number | undefined) {

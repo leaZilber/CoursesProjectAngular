@@ -31,10 +31,9 @@ export class SignUpComponent {
       });
     }
   
-    signUp() {
+    Register() {
       if (this.signUpForm.valid) {
         this.userService.Sign(this.signUpForm.value)
-        
       }
     }
 }
