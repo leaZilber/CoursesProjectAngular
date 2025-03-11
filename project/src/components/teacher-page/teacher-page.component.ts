@@ -172,12 +172,10 @@ export class TeacherPageComponent implements OnInit {
   }
 
   deletelesson(Cid: number | undefined,Lid: number | undefined) {
-
     this.courseService.deleteLesson(Cid,Lid).subscribe({
       next: res => {
         console.log('Success:', res),
         this.loadcourses();
-
       },
       error: err => console.error('Error:', err)
     });

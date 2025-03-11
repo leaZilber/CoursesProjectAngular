@@ -33,7 +33,7 @@ export class SignUpComponent {
   
     Register() {
       if (this.signUpForm.valid) {
-        this.userService.Sign(this.signUpForm.value)
+        this.userService.Register(this.signUpForm.value)
       }
     }
 }
